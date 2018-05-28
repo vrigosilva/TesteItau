@@ -1,0 +1,103 @@
+# Teste de Candidatos Java
+
+## Este projeto tem por objetivo descrever o exercício de avaliação do processo seletivo de desenvolvedores Java
+
+O candidato deverá desenvolver uma aplicação [Java 8](https://www.java.com/pt_BR/download/) de APIs REST com [Spring Framework](https://spring.io/) que atenda aos critérios a seguir.
+
+Para avaliação, o candidato irá compartilhar o repositório Git do sistema com os revisores que irão análisar o repo, baixar, compilar e executar a aplicação.
+
+---
+
+## Itens Mandatórios
+
+### Requisitos Mínimos
+
+- Camada de API/Controller:
+  - No mínimo 4 APIs (por API leia-se _endpoint_ + verbo);
+  - Mínimo de 3 verbos diferentes;
+  - Consumir e produzir JSON.
+- Camada de serviço:
+  - Deve ser responsável por transformar/armazenar/postar os dados;
+  - Comunicação com (no mínimo um dos itens abaixo):
+      - _Mensageria_:
+          - Postagem em e/ou leitura de filas (sugestão: RabbitMQ e/ou ActiveMQ).
+      - _Banco de Dados_:
+          - Leitura e escrita na base;
+          - Pode ser Relacional ou NoSQL (sugestão: MS SQL Server ou H2 ou Redis).
+      - _Outras APIs REST_ (neste caso, faria-se necessário criar um 2º projeto com APIs expostas para consumo).
+
+### Tecnologias
+
+- [Java 8](https://www.java.com/pt_BR/download/);
+- [Spring Framework](https://spring.io/) (Boot / MVC);
+- Gerenciamento de dependências do projeto ([Maven](https://maven.apache.org/) ou [Gradle](https://gradle.org/));
+- [Git](https://git-scm.com/);
+- Frameworks de testes unitários (sugestão: [JUnit](https://junit.org/junit5/) & [Mockito](http://site.mockito.org/)).
+
+### Conceitos
+
+- Orientação à Objetos:
+  - Herança;
+  - Polimorfismo;
+  - Encapsulamento;
+  - Sobrecarga;
+  - Classes abstratas;
+  - Interfaces;
+  - Super e subclasses;
+  - Utilizar no mínimo 2 _design patterns_.
+
+- Testes unitários (no mínimo de 1 serviço e 1 API);
+- Leitura de arquivo de propriedades (.properties e/ou .yaml);
+- Serialização e desserialização (_Bean/Model/POJO_ para JSON e vice-versa);
+- Logger (sugestão: [log4j](https://logging.apache.org/log4j/2.x/)).
+- Da linguagem:
+  - `Generics`;
+  - `Constants` e `enums`;
+  - Tratamento de erros com exceções customizadas;
+  - `varargs`;
+  - Controle de fluxo e algoritmos de seleção:
+      - `if/else`;
+      - operador ternário `? :`.
+  - Laços de repetição:
+      - `for` simples/vetorial e/ou `while` e/ou `do... while`.
+  - Estruturas de Dados:
+      - _Arrays_;
+      - Listas.
+
+---
+
+## Diferenciais
+
+- Adoção de TDD;
+- Aplicação que explore bem recursos do Java 8 (lambdas e/ou streams e/ou Date API e/ou ExecutorService, etc.);
+- Aplicação que explore bem recursos do Spring Framework;
+- Bom uso do git (organização das _branches_ e _commits_ do repositório);
+- Boa organização e estruturação do projeto;
+- Boa documentação do repositório ([README.MD](https://guides.github.com/features/mastering-markdown/));
+- Boa documentação do código ([javadoc](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html));
+- Boa documentação das APIs ([Swagger](https://swagger.io/)).
+
+---
+
+### Critérios de avaliação do projeto
+
+- [x] Funcionamento da aplicação;
+- [x] Qualidade do código;
+- [x] Qualidade e cobertura dos testes unitários;
+- [x] Uso dos recursos da linguagem e dos frameworks do sistema;
+- [x] Organização do repositório;
+- [x] Criatividade, tamanho e complexidade da solução;
+- [x] Uso de boas práticas e convenções de implementação, versionamento e controle do repositório.
+
+---
+
+### Observações
+
+- O programa tem que rodar e atender a todos os requisitos listados;
+- Adotar boas práticas e convenções de codificação;
+- A aplicação deve ser compilada e executada em Java 8;
+- O código e documentação (se houver) devem estar em português (salvo exceções de convenções, como por exemplo, nome de _design patterns - factory, builder_..., etc.);
+- A configuração dos _beans_ fica a critério do candidato (via classes java ou arquivos .xml, por exemplo);
+- Se o candidato optar por fazer consultas em bases, fica a critério dele a implementação escolhida (JDBC, JdbcTemplate, JPA / Hibernate, STORED PROCEDURE, etc.).
+
+### Boa sorte!

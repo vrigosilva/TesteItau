@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Lista de Jogadores</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js" ></script>
+
+</head>
+  <body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Cadastro Jogadores</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/" th:href="@{/}">Jogadores</a></li>
+      <li><a href="#" th:href="@{/jogadorForm}">Novo</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+	<div class="container">
+
+		<div id="listaDeJogadores">
+		    <table class="table table-hover">
+		        <thead>
+		        <tr>
+		            <th>Nome</th>
+		            <th>E-mail</th>
+		            <th>Telefone</th>
+		            <th>Codinome</th>
+		            <th>Lista origem</th>
+		            <th>Acoes</th>
+		        </tr>
+		        </thead>
+		        <tr th:each="jogador : ${jogadores}">
+		            <td> <span th:text="${jogador.name}"></span> </td>
+		            <td> <span th:text="${jogador.email}"></span> </td>
+		            <td> <span th:text="${jogador.fone}"></span> </td>
+		            <td> <span th:text="${jogador.codinome}"></span> </td>
+		            <td> <span th:text="${jogador.origem.descricao}"></span> </td>
+		            <td> 
+    					<a href="#" class="btn btn-small btn-info"><span class="glyphicon glyphicon-pencil"></span> </a>
+    					<a href="#" class="btn btn-small btn-danger"><span class="glyphicon glyphicon-remove"></span> </a>
+      		        </td>
+		        </tr>
+		    </table>
+		</div>	
+	</div>
+
+  </body>
+</html>

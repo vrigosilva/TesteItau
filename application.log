@@ -1,0 +1,2 @@
+2018-05-27 17:46:44 [http-nio-8080-exec-1] DEBUG b.c.i.t.service.JogadorService - listaJogadores
+2018-05-27 17:50:44 [Thread-34] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
